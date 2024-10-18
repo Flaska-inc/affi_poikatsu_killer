@@ -6,6 +6,7 @@ import CardPage from './pages/CardPage';
 import GamePage from './pages/GamePage';
 import RakutenPage from './pages/RakutenPage';
 import DocomoPage from './pages/DocomoPage';
+import PointSitesPage from './pages/PointSitesPage';
 function App() {
   return (
     <Router>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/card" element={<CardPage />} />
         <Route path="/rakuten" element={<RakutenPage />} />
         <Route path="/docomo" element={<DocomoPage />} />
+        <Route path="/pointsites" element={<PointSitesPage />}/>
       </Routes>
     </Router>
   );
