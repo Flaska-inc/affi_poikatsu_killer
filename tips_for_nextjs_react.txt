@@ -1,0 +1,10 @@
+参考サイトとか
+
+Reactを使ったブログ作成
+https://qiita.com/himorishige/items/7ebd87ddaf7c86901b9a
+
+
+
+ReactベースのフレームワークであるNext.jsでのブログ作成
+https://reffect.co.jp/react/nextjs-markdown-blog
+https://zenn.dev/redpanda/articles/ab0832ce800bf3
