@@ -1,0 +1,27 @@
+body{
+    
+}
+
+@media(min-width: var(--bpoint-tablet)){
+}
+
+.card{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card > *{
+    margin:5px;
+    padding:10px;
+    border-radius:5px;
+    /* border:solid 2px #ccc; */
+    width:calc(33% - 10px - 20px - 4px);
+    text-align: center;
+    
+    background-color: var(--theme);
+    font-weight: bold;
+}
+.card a{
+    color: #fff;
+}
