@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import Article001 from "../components/articles/Article001";
 import PointSite001 from "../components/pointsites/pointsite001";
+import "./General.css";
+import "./HomePage.css";
 
 const HomePage: React.FC = () => {
     return (
@@ -11,13 +13,14 @@ const HomePage: React.FC = () => {
             <h3> オススメのポイントサイト（ここに単価の良い案件を五個ほど並べる。） </h3>
             <PointSite001/>
             <h3> 貯め方で選ぶ </h3>
-            <ul>
+            <ul className="card">
                 <li><Link to="/game"> ゲームで貯める（ゲームアイコンを入れても良い）</Link></li>
                 <li><Link to="card"> カードで貯める </Link></li>
             </ul>
             <h3> ポイントの種類で選ぶ </h3>
-            <ul>
+            <ul className="card">
                 <li><Link to="/rakuten"> 楽天ポイントを貯める </Link></li>
+                <li><Link to="/docomo"> dポイントを貯める </Link></li>
                 <li><Link to="/docomo"> dポイントを貯める </Link></li>
             </ul>
             <h3> ノウハウを学ぶ </h3>
