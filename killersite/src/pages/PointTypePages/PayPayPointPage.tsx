@@ -1,7 +1,6 @@
-import Case001 from "../../components/cases/case001";
-import { Link } from "react-router-dom";
 import HeaderPage from "../HeaderPage";
 import FooterPage from "../FooterPage";
+import ProjectList from "../../components/projects/projectlist";
 const PayPayPointPage: React.FC = () => {
     return (
         <div>
@@ -9,7 +8,7 @@ const PayPayPointPage: React.FC = () => {
         <body>
             <h1> PayPayポイントを貯める </h1>
             <p> 案件一覧 </p>
-            <Case001/> 
+            <ProjectList tags = {["PayPayPoint"]}/>
         </body>
         <FooterPage/>
         </div>
