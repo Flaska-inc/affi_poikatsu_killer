@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import "../components/css/General.css";
 import "../components/css/Header.css";
+import { Helmet } from "react-helmet"
 
 const HeaderPage: React.FC = () => {
     return (
         <div>
-        <head>
+        <Helmet>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             <meta name="theme-color" content="salmon"/>
             <title>ポイ活のすすめ</title>
@@ -17,7 +18,7 @@ const HeaderPage: React.FC = () => {
             <link rel="icon" type="image/x-icon" href="img/icon/"> */}
 
             <script src="https://kit.fontawesome.com/e409242ab5.js" crossOrigin="anonymous"></script>
-        </head>
+        </Helmet>
 
         <body id="#header">
             <h1> <i className="fa-solid fa-hand-point-up"></i> ポイ活のすすめ </h1>
