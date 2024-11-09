@@ -1,0 +1,23 @@
+body{
+    border-bottom:solid 5px #ccc;
+}
+h1{
+    font-family: "Noto Sans JP Black", "ヒラギノ角ゴ", "游ゴシック", "メイリオ", "MSPゴシック", sans-serif;
+    padding: 0;
+    margin:0
+}
+#head-bar{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#head-bar > *{
+    cursor: pointer;
+    font-size:14px;
+
+}
+.head-wrap-contents{
+    display: none;
+}
