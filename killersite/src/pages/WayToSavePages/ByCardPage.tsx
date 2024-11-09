@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
-import Case001 from "../../components/cases/case001";
 import HeaderPage from "../HeaderPage";
 import FooterPage from "../FooterPage";
+import ProjectList from "../../components/projects/projectlist";
 const ByCardPage: React.FC = () => {
     return (
         <div>
@@ -9,7 +8,7 @@ const ByCardPage: React.FC = () => {
         <body>
             <h1> カードで貯める </h1>
             <p> 案件一覧 </p>
-            <Case001/> 
+            <ProjectList tags = {["ByCard"]}/>
         </body>
         <FooterPage/>
         </div>

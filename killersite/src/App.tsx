@@ -1,4 +1,3 @@
-import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // ローカルで動かすには npm install react-router-dom コマンドを実行する必要あり。
 import HomePage from './pages/HomePage';
@@ -11,7 +10,6 @@ import RakutenPointPage from './pages/PointTypePages/RakutenPointPage';
 import DPointPage from './pages/PointTypePages/DPointPage';
 import PayPayPointPage from './pages/PointTypePages/PayPayPointPage';
 import ArticleListPage from './pages/ArticleListPage';
-import CaseListPage from './pages/CaseListPage';
 import VPointPage from './pages/PointTypePages/VPointPage';
 import WAONPointPage from './pages/PointTypePages/WAONPointPage';
 import RakutenEZonePage from './pages/EconomicZonePages/RakutenEZonePage';
@@ -19,6 +17,7 @@ import SBIEZonePage from './pages/EconomicZonePages/SBIEZonePage';
 import PayPayEZonePage from './pages/EconomicZonePages/PayPayEZonePage';
 import AUEZonePage from './pages/EconomicZonePages/AUEZonePage';
 import AEONEZonePage from './pages/EconomicZonePages/AEONEZonePage';
+import ProjectListPage from './pages/ProjectListPage';
 function App() {
   return (
     <Router>
@@ -45,7 +44,7 @@ function App() {
         <Route path="/articlelist" element={<ArticleListPage />}/>
         <Route path="/article001" element={<Article001Page />}/>
 
-        <Route path="/caselist" element={<CaseListPage/>} />
+        <Route path="/projectlist" element={<ProjectListPage/>} />
       </Routes>
     </Router>
   );

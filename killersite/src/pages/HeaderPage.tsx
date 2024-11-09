@@ -4,7 +4,7 @@ const HeaderPage: React.FC = () => {
         <div>
         <body>
             <h1> ポイ活のすすめ </h1>
-            <p><Link to="/caselist">案件一覧</Link></p>
+            <p><Link to="/projectlist">案件一覧</Link></p>
             <p><Link to="/articlelist">記事一覧</Link></p>
             <p> <Link to="/">ホームへ戻る</Link></p>
             <h3> 貯め方で選ぶ（ホバーするとリストが出てくるように。以下同） </h3>
