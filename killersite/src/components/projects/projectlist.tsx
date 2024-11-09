@@ -15,7 +15,6 @@ const ProjectList: React.FC<ProjectListProps> = ({ tags }) => {
   if (filteredProjects.length === 0) {
     return <div>該当する案件がありません</div>;
   }
-
   return (
     <div>
       {filteredProjects.map((project) => (
