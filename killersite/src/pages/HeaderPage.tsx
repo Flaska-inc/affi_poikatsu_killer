@@ -19,7 +19,7 @@ const HeaderPage: React.FC = () => {
             <script src="https://kit.fontawesome.com/e409242ab5.js" crossOrigin="anonymous"></script>
         </head>
 
-        <body>
+        <body id="#header">
             <h1> <i className="fa-solid fa-hand-point-up"></i> ポイ活のすすめ </h1>
             <div id="head-bar">
                 <p><Link to="/caselist">案件一覧</Link></p>

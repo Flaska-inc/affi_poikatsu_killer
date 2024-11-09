@@ -1,5 +1,19 @@
-body{
+#header{
+    position:fixed;
+    height:80px;
+    width:calc(100vw - 30px);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: #fff;
+    z-index: 10;
     border-bottom:solid 5px #ccc;
+}
+@media(min-width: 700px){
+    #header{
+        width:800px !important;
+    }
 }
 h1{
     font-family: "Noto Sans JP Black", "ヒラギノ角ゴ", "游ゴシック", "メイリオ", "MSPゴシック", sans-serif;
