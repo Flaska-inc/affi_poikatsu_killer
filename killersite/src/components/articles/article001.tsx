@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 const Article001: React.FC = () => {
     return (
         <div ><Link to="/article001"/>
