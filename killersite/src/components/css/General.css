@@ -1,0 +1,48 @@
+:root{
+    --bpoint-tablet: 700px;
+    --bpoint-mobile: 400px;
+
+
+    --theme: rgb(212, 58, 23);
+    --light-theme: rgb(255, 229, 224);
+}
+
+h1{
+    color: var(--theme);
+}
+
+body{
+    width: calc(100% - 30px);
+    margin:15px;
+}
+
+@media(min-width: var(--bpoint-tablet)){
+    
+    body{
+        width:800px;
+    }
+}
+
+
+/* css reset */
+
+a{
+    text-decoration: none;
+    color: var(--theme);
+    padding-bottom:0.1em;
+}
+a.border{
+    border-bottom:solid 1px var(--theme);
+}
+ul{
+    
+    margin: 0;
+    padding:0;
+}
+li{
+    list-style: none;
+    outline: none;
+}
+button{
+    outline: none;
+}

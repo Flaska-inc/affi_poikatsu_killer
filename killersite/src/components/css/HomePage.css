@@ -1,0 +1,13 @@
+body{
+    
+}
+
+@media(min-width: var(--bpoint-tablet)){
+}
+
+.card_parent{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
