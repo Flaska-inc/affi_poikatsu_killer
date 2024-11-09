@@ -1,0 +1,45 @@
+.card{
+    margin:5px;
+    padding:15px 15px;
+    border-radius:5px;
+    /* border:solid 2px #ccc; */
+    width:calc(33% - 10px - 20px - 4px);
+    text-align: center;
+    
+    background-color: var(--theme);
+    font-weight: bold;
+    box-shadow: 0 0 10px #999;
+}
+.card *{
+    color: #fff;
+}
+.card h3{
+    margin:0 -15px;
+    padding: 0.3em 15px;
+    text-align: left;
+
+    background-color: #fff;
+    color:var(--theme);
+}
+.card p{
+    font-weight:500;
+    font-size:13px;
+    text-align: left;
+}
+.card a{
+    border-bottom:solid 2px white;
+}
+.card-tag{
+    display: inline-block;
+    border-radius:3px;
+    background-color: var(--light-theme);
+    padding:0.2em 0.5em;
+    color:var(--theme);
+    font-size:13px;
+}
+.card-time{
+
+}
+.card-img{
+    
+}

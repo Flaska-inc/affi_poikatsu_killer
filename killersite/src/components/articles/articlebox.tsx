@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import ArticleDatabase from "../../database/articledata/articledata";
+import "../css/ArticleBox.css"
 
 interface ArticleBoxProps {
     id: number;
@@ -13,11 +14,11 @@ const ArticleBox: React.FC<ArticleBoxProps> = ({ id }) => {
     }
 
     return (
-        <div><Link to = {article.link}>
-        <img src={article.picture} alt={article.title}/>
+        <div className="card"><Link to = {article.link}>
+        <img className="card-img" src={article.picture} alt={article.title}/>
         <h2>{article.title}</h2>
-        <p>タグ: {article.tag}</p>
-        <p>日付: {article.date}</p></Link>
+        <p className="card-tag">タグ: {article.tag}</p>
+        <p className="card-time">日付: {article.date}</p></Link>
         </div>
     );
 };

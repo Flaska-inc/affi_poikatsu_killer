@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectDatabase from "../../database/projectdata/projectdata";
+import "../css/ProjectBox.css"
 
 interface ProjectBoxProps {
     id: number;
@@ -12,11 +13,11 @@ const ProjectBox: React.FC<ProjectBoxProps> = ({ id }) => {
     }
 
     return (
-        <div>
+        <div className="card">
         <img src={project.picture} alt={project.title}/>
         <h2>{project.title}</h2>
-        <p>タグ: {project.tag}</p>
-        <p>日付: {project.date}</p>
+        <p className="card-tag">タグ: {project.tag}</p>
+        <p className="card-time">日付: {project.date}</p>
         </div>
     );
 };
