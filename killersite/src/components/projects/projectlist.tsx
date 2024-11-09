@@ -1,17 +1,15 @@
-// ProjectList.tsx
 import React from "react";
 import ProjectBox from "./projectbox";
 import ProjectDatabase from "../../database/projectdata/projectdata";
 
 interface ProjectListProps {
-    tags: string[];
+  tags?: string[]; 
 }
 
-const ProjectList: React.FC<ProjectListProps> = ({ tags }) => {
-    const filteredProjects = ProjectDatabase.filter((project) => project.tag.some((projectTag) => tags.includes(projectTag))
-    );
-
-  // 一致する案件がない場合のメッセージ
+const ProjectList: React.FC<ProjectListProps> = ({ tags = [] }) => {
+  const filteredProjects = ProjectDatabase.filter((project) =>
+    tags.length === 0 || project.tag.some((projectTag) => tags.includes(projectTag))
+  );
   if (filteredProjects.length === 0) {
     return <div>該当する案件がありません</div>;
   }
