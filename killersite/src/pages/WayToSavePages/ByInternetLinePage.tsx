@@ -5,7 +5,7 @@ const ByInternetLinePage: React.FC = () => {
     return (
         <div>
         <HeaderPage/>
-        <body>
+        <body className="main-content">
             <h1> ネット回線の新規契約で貯める </h1>
             <p> 案件一覧 </p>
             <ProjectList tags = {["ByInternetLine"]}/>

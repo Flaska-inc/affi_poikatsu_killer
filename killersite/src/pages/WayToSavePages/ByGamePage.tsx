@@ -5,7 +5,7 @@ const ByGamePage: React.FC = () => {
     return (
         <div>
         <HeaderPage/>
-        <body>
+        <body className="main-content">
             <h1> ゲームで貯める </h1>
             <p> 案件一覧 </p>
             <ProjectList tags = {["ByGame"]}/>

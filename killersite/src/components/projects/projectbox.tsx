@@ -14,10 +14,10 @@ const ProjectBox: React.FC<ProjectBoxProps> = ({ id }) => {
 
     return (
         <div className="card">
-        <img src={project.picture} alt={project.title}/>
-        <h2>{project.title}</h2>
-        <p className="card-tag">タグ: {project.tag}</p>
-        <p className="card-time">日付: {project.date}</p>
+            <img src={project.picture} alt={project.title}/>
+            <h2>{project.title}</h2>
+            <p className="card-tag">タグ: {project.tag}</p>
+            <p className="card-time">日付: {project.date}</p>
         </div>
     );
 };
