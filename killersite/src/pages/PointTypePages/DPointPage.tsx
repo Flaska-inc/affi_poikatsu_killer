@@ -5,7 +5,7 @@ const DPointPage: React.FC = () => {
     return (
         <div>
         <HeaderPage/>
-        <body>
+        <body className="main-content">
             <h1> dポイントを貯める </h1>
             <p> 案件一覧 </p>
             <ProjectList tags = {["DPoint"]}/>

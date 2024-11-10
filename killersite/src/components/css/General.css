@@ -1,28 +1,31 @@
 :root{
-    --bpoint-tablet: 700px;
+    --bpoint-tablet: 800px;
     --bpoint-mobile: 400px;
 
 
     --theme: rgb(212, 58, 23);
     --light-theme: rgb(255, 229, 224);
+    --yellow: #ffd062;
+    --dark-yellow: #f9f1de;
 }
 
 h1{
     color: var(--theme);
 }
 
-body{
+.main-content{
     width: calc(100% - 30px);
-    margin:15px;
+    margin:0 auto;
 }
 
-@media(min-width: var(--bpoint-tablet)){
-    
-    body{
-        width:800px;
+@media(min-width: 800px){
+    .main-content{
+        width:770px;
     }
 }
-
+body{
+    margin:0 auto;
+}
 
 /* css reset */
 
@@ -45,4 +48,32 @@ li{
 }
 button{
     outline: none;
+}
+
+/* layout */
+.flex-3{
+    display: flex;
+    justify-content: left;
+    align-items: stretch;
+    flex-wrap:wrap;
+}
+
+/* animation */
+
+@keyframes sway {
+    0% {
+      transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
 }

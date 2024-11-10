@@ -1,24 +1,35 @@
+#header-outer{
+    margin-bottom:150px;
+}
 #header{
     position:fixed;
-    height:80px;
-    width:calc(100vw - 30px);
+    z-index: 10;
+    width:calc(100vw - 0px);
+    height:106px;
     top:0;
     bottom:0;
     left:0;
     right:0;
-    background-color: #fff;
-    z-index: 10;
-    border-bottom:solid 5px #ccc;
+    padding:0;
+    padding-top:5px;
+
+    background-color: var(--yellow);
+    border-bottom:solid 3px #000;
+}
+#header-inner{
+    width:calc(100vw - 0);
+    margin:auto;
 }
 @media(min-width: 700px){
-    #header{
+    #header-inner{
         width:800px !important;
     }
 }
-h1{
-    font-family: "Noto Sans JP Black", "ヒラギノ角ゴ", "游ゴシック", "メイリオ", "MSPゴシック", sans-serif;
-    padding: 0;
-    margin:0
+#header h1{
+    font-family: "Zen maru gothic", "ヒラギノ角ゴ", "游ゴシック", "メイリオ", "MSPゴシック", sans-serif;
+    padding: 5px;
+    margin: 0;
+    font-size:25px;
 }
 #head-bar{
     display: flex;
@@ -29,9 +40,51 @@ h1{
 
 #head-bar > *{
     cursor: pointer;
-    font-size:14px;
+    width:100%;
+    height:45px;
+    margin:0;
+    padding-top:10px;
+    padding-bottom:5px;
 
+    font-size:14px;
+    font-weight:bold;
+    text-align:center;
+}
+#head-bar > * i{
+    font-size:18px;
+}
+
+#head-bar > *:hover{
+    background-color: #fff;
+}
+#head-bar > *:hover > i{
+    animation: sway 0.3s 2 ease-out;
 }
 .head-wrap-contents{
     display: none;
+}
+.head-hover-contents{
+    position: relative;
+}
+.head-hover-contents:hover .head-wrap-contents{
+    display: block;
+    position: absolute;
+    top:60px;
+    padding:5px 0;
+    /* border:solid 2px #000; */
+    background-color: #fff;
+    /* box-shadow:0 0 15px #aaa; */
+
+}
+
+.head-wrap-contents li{
+    padding:7px 7px;
+    width:calc(100% - 14px);
+    text-align:left;
+
+    color:black !important;
+    font-size:13px;
+}
+.head-wrap-contents li:hover{
+    background-color: var(--yellow);
 }

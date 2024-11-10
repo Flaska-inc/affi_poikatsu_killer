@@ -5,7 +5,7 @@ const ProjectListPage: React.FC = () => {
     return (
         <div>
         <HeaderPage/>
-        <body>
+        <body className="main-content">
             <h1> 案件一覧 </h1>
             <ProjectList tags={[]} />
         </body>

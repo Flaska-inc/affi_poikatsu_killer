@@ -14,7 +14,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ tags = [] }) => {
     return <div>該当する案件がありません</div>;
   }
   return (
-    <div>
+    <div className="flex-3">
       {filteredProjects.map((project) => (
         <ProjectBox key={project.id} id={project.id} />
       ))}

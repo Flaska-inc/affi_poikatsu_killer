@@ -5,7 +5,7 @@ const RakutenEZonePage: React.FC = () => {
     return (
         <div>
         <HeaderPage/>
-        <body>
+        <body className="main-contentr">
             <h1> 楽天経済圏で貯める </h1>
             <p> 案件一覧 </p>
             <ProjectList tags = {["RakutenEZone"]}/>
