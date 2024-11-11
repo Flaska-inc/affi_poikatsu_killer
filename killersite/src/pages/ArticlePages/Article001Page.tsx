@@ -5,7 +5,7 @@ const Article001Page: React.FC = () => {
     return (
         <div>
         <HeaderPage/>
-        <body>
+        <body className="main-content">
             <h1> 記事タイトル </h1>
             <p>記事内容</p>
             <p>関連する案件<CaseBox id = {1}/></p> 

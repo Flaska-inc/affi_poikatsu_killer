@@ -50,6 +50,10 @@
     font-weight:bold;
     text-align:center;
 }
+#header a{
+    display: block;
+    width:calc(100%);
+}
 #head-bar > * i{
     font-size:18px;
 }
