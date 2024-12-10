@@ -2,8 +2,21 @@ import { Link } from "react-router-dom";
 import "../components/css/General.css";
 import "../components/css/Header.css";
 import { Helmet } from "react-helmet"
+import $ from "jquery"
+import { useEffect } from "react";
+
+
 
 const HeaderPage: React.FC = () => {
+    useEffect(() => {
+        $("#mobile-menu-button").on("click",function(){
+            $("#mobile-menu").toggleClass("disp")
+        })
+    })
+    
+
+
+
     return (
     <div id="header-outer">
         <Helmet>
@@ -22,7 +35,13 @@ const HeaderPage: React.FC = () => {
 
         <body id="header">
             <div id="header-inner">
-                <h1> <Link to="/"><i className="fas fa-crown"></i> ポイ活のすすめ </Link></h1>
+                <div id="header-upper">
+                    <h1> <Link to="/"><i className="fas fa-crown"></i> ポイ活のすすめ </Link></h1>
+                    <div id="mobile-menu-button"><i className="fas fa-bars"></i></div>
+                </div>
+                <div id="mobile-menu">
+                    <h1>メニュー</h1>
+                </div>
                 <div id="head-bar">
                     <p><Link to="/projectlist"><i className="fas fa-list"></i> <br/>案件一覧</Link></p>
                     <p><Link to="/articlelist"><i className="far fa-newspaper"></i> <br/>記事一覧</Link></p>
@@ -62,9 +81,10 @@ const HeaderPage: React.FC = () => {
                     
                 </div>
             </div>
-            <script>
 
-            </script>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            {/* <script src="../scripts/header.js"></script> */}
         </body>
     </div>
     );
