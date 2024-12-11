@@ -1,7 +1,6 @@
 import HeaderPage from "./HeaderPage";
 import FooterPage from "./FooterPage";
 import "../components/css/HomePage.css";
-import ProjectBox from "../components/projects/projectbox";
 import ArticleBox from "../components/articles/articlebox";
 import ProjectList from "../components/projects/projectlist";
 
