@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage';
 import Article001Page from './pages/ArticlePages/Article001Page';
 import ByGamePage from './pages/WayToSavePages/ByGamePage';
 import ByCardPage from './pages/WayToSavePages/ByCardPage';
-import ByQuestionairePage from './pages/WayToSavePages/ByQuestionnairePage';
+import ByQuestionairePage from './pages/WayToSavePages/ByQuestionairePage';
 import ByInternetLinePage from './pages/WayToSavePages/ByInternetLinePage';
 import RakutenPointPage from './pages/PointTypePages/RakutenPointPage';
 import DPointPage from './pages/PointTypePages/DPointPage';

@@ -8,7 +8,7 @@ const ByQuestionairePage: React.FC = () => {
         <body className="main-content">
             <h1> アンケートで貯める </h1>
             <p> 案件一覧 </p>
-            <ProjectList tags = {["ByQuestionnaire"]}/>
+            <ProjectList tags = {["ByQuestionaire"]}/>
         </body>
         <FooterPage/>
         </div>
