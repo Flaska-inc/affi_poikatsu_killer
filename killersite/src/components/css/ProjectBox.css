@@ -1,17 +1,17 @@
 .card{
     margin:5px;
     padding:15px 15px;
-    border-radius:5px;
+    border-radius:10px;
     /* border:solid 2px #ccc; */
-    width:calc(33% - 10px - 20px - 4px);
+    width:calc(33% - 10px - 20px - 4px - 10px);
     text-align: center;
     
-    background-color: var(--theme);
+    background-color: white;
     font-weight: bold;
-    box-shadow: 0 0 10px #999;
+    box-shadow: 0 0 20px #999;
 }
 .card *{
-    color: #fff;
+    color: black;
 }
 .card h2{
     margin:0 -15px;
@@ -19,8 +19,8 @@
     text-align: left;
 
     font-size:16px;
-    background-color: #fff;
-    color:var(--theme);
+    background-color: var(--theme);
+    color:white;
 }
 .card p{
     font-weight:500;
@@ -28,7 +28,7 @@
     text-align: left;
 }
 .card a{
-    border-bottom:solid 2px white;
+    /* border-bottom:solid 2px white; */
 }
 .card-tag{
     display: inline-block;
@@ -41,6 +41,8 @@
 .card-time{
 
 }
-.card-img{
-    
+
+.card img{
+    width:100%;
+    object-fit: contain; 
 }

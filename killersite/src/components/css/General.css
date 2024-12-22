@@ -54,7 +54,7 @@ button{
 .flex-3{
     display: flex;
     justify-content: left;
-    align-items: stretch;
+    align-items: flex-start;
     flex-wrap:wrap;
 }
 

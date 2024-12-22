@@ -1,5 +1,9 @@
 body{
-    
+    background-repeat: repeat;
+}
+#background{
+    background-image:url(../../assets/img/background.png);
+    background-opacity:0.3;
 }
 
 @media(min-width: var(--bpoint-tablet)){
