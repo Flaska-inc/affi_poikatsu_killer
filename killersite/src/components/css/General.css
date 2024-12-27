@@ -58,6 +58,9 @@ button{
     flex-wrap:wrap;
 }
 
+p{
+    margin:0;
+}
 /* animation */
 
 @keyframes sway {
